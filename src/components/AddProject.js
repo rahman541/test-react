@@ -38,15 +38,16 @@ class AddProject extends Component {
 					<div>
 						<label>Title</label>< br/>
 						<input type="text" ref="title" />< br/>
-					</div>
+					</div><br/>
 					<div>
 						<label>Category</label>< br/>
 						<select ref="category">
 							{categoryOptions}
 						</select>
-					</div>
+					</div><br/>
 					<input type="submit" value="Submit" />
 				</form>
+				<br/>
 			</div>
 		);
 	}
