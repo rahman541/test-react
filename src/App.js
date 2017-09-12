@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import uuid from 'uuid';
 import $ from 'jquery';
 import Projects from './components/projects';
+import Todos from './components/Todos';
 import AddProject from './components/AddProject';
 import './App.css';
 
@@ -77,6 +78,8 @@ class App extends Component {
             <div className="App">
                 <AddProject addProject={this.handleAddProject.bind(this)}/>
                 <Projects projects={this.state.projects} onDelete={this.handleDeleteProject.bind(this)} />
+                <hr/>
+                <Todos todos={this.state.todos} />
             </div>
         );
     }
