@@ -5,8 +5,9 @@ class AddProject extends Component {
 		categories: ['Web design', 'Web Development', 'Mobile Development']
 	}
 
-	handleSubmit() {
+	handleSubmit(e) {
 		console.log('Submitted..');
+		e.preventDefault();
 	}
 
 	render() {
